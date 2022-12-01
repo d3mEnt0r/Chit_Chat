@@ -12,6 +12,7 @@ do {
 textarea.addEventListener('keyup', (event)=> {
     if(event.key === 'Enter'){
         sendMessage(event.target.value);
+        textarea.value="";
     }
 });
 
